@@ -99,7 +99,7 @@ Let's take a look at what our artists table will need to look like:
 |---|-------------|
 |1  |Taylor Swift |
 
-Our artists table just needs a `name` column. Let's write the migration. In `db/migrate/02_create_artists_table.rb`:
+Our artists table just needs a `name` column. Let's write the migration. In `db/migrate/02_create_artists.rb`:
 
 ```ruby
 class CreateArtists < ActiveRecord::Migration
@@ -121,7 +121,7 @@ Let's take a look at what our genres table will need to look like:
 |---|-----|
 |1  |pop  |
 
-Let's write our migration. In `db/migrate/03_create_genres_table.rb`:
+Let's write our migration. In `db/migrate/03_create_genres.rb`:
 
 ```ruby
 class CreateGenres < ActiveRecord::Migration
@@ -364,3 +364,5 @@ It's working!
 
 
 <a href='https://learn.co/lessons/activerecord-associations-intro' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-associations-intro'>ActiveRecord Associations</a> on Learn.co and start learning to code for free.</p>
