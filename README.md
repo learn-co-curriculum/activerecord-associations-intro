@@ -233,7 +233,19 @@ class Genre < ActiveRecord::Base
 end
 ```
 
-And that's it!
+### Songs Have an Artist
+
+Finally, we need to add an artist column to songs in 'db/migrate/04_add_artist_to_songs.rb' in order to complete our relationships:
+
+```ruby
+class AddArtistToSongs < ActiveRecord::Migration
+  def change
+    add_column :songs, :artist, :string 
+  end
+end
+```
+
+And that's it! 
 
 ## Our Code in Action: Working with Associations
 
